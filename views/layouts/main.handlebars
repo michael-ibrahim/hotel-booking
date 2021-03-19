@@ -5,44 +5,70 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Chez Jerome</title>
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<!-- jQuery -->
+<!--	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- jQuery -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<!-- CSS Stylesheet -->
+<!--	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <!-- CSS Stylesheet -->
 	<link rel="stylesheet" href="/assets/css/style.css" type="text/css">
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Lato" rel="stylesheet">
 	<link rel="icon" type="image/png" href="/assets/img/fav-square.png">
 </head>
 <body>
-	<nav class="navbar navbar-inverse navbar-static-top example-8">
-	    <div class="container">
-	      <div class="navbar-header">
-	        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar8">
-	          <span class="sr-only">Toggle navigation</span>
-	          <span class="icon-bar"></span>
-	          <span class="icon-bar"></span>
-	          <span class="icon-bar"></span>
-	        </button>
-	        <a class="navbar-brand text-hide" href="/">Chez Jerome
-	        </a>
-	      </div>
-	      <div id="navbar8" class="navbar-collapse collapse">
-	        <ul class="nav navbar-nav navbar-right">
-	          <li class="active"><a href="/">Home</a></li>
-	          <li><a href="/guest">Guest Login</a></li>
-	          <li><a href="/room/book">Book Room</a></li>
-	          <li><a href="/tables">Restaurant</a></li>
-	          <li><a href="/yelp">Activities</a></li>
-	        </ul>
-	      </div>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background-color: rgba(0,0,0,0.5) !important;">
+	    <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img src="/assets/img/logo.jpg" class="me-2" style="height:40px;"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/guest">Guest Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/room/book">Book Room</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/tables">Restaurant</a>
+                    </li>
+                </ul>
+            </div>
+
+<!--	      <div class="navbar-header">-->
+<!--	        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar8">-->
+<!--	          <span class="sr-only">Toggle navigation</span>-->
+<!--	          <span class="icon-bar"></span>-->
+<!--	          <span class="icon-bar"></span>-->
+<!--	          <span class="icon-bar"></span>-->
+<!--	        </button>-->
+<!--	        <a class="navbar-brand text-hide" href="/">Chez Jerome-->
+<!--	        </a>-->
+<!--	      </div>-->
+<!--	      <div id="navbar8" class="navbar-collapse collapse">-->
+<!--	        <ul class="nav navbar-nav navbar-right">-->
+<!--	          <li><a href="/">Home</a></li> &lt;!&ndash; class="active" &ndash;&gt;-->
+<!--	          <li><a href="/guest">Guest Login</a></li>-->
+<!--	          <li><a href="/room/book">Book Room</a></li>-->
+<!--	          <li><a href="/tables">Restaurant</a></li>-->
+<!--&lt;!&ndash;	          <li><a href="/yelp">Activities</a></li>&ndash;&gt;-->
+<!--	        </ul>-->
+<!--	      </div>-->
 	      <!--/.nav-collapse -->
 	    </div>
 	    <!--/.container-fluid -->
 	  </nav>	  
 		  <!-- <img src="/assets/img/LOGOfinal.png" alt="Chez Jerome"> -->
-  <div class="container main">
+  <div class="container-fluid main">
 		{{{ body }}}
   </div>
 

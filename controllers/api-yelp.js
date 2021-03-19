@@ -1,7 +1,7 @@
 // REQUIRED PACKAGES
 	var express = require("express");
 	var router = express.Router();
-	var yelpKeys = require("../config.js");
+	var yelpKeys = require("../config.json");
 	var yelp = require("yelp-fusion");
 
 		console.log("CLIENT ID: ", yelpKeys.clientId);
