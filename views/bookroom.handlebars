@@ -1,4 +1,4 @@
-<div class="container" style="width:50%">
+<div class="container py-5" style="width:50%">
 <form style="padding: 20px;" action="/room/book" method="POST">
   <h2>Book a Room</h2>
   <br>
@@ -7,9 +7,7 @@
     <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="room" name="room" required>
       <option value="" disabled selected hidden>Choose a room</option>
       {{#each rooms}}
-        {{#if this.available}}
           <option value="{{this.id}}">{{this.id}}</option>
-        {{/if}}
       {{/each}}
     </select>
     <p class="validate" id="room-validate" style="display:none;">Please select a room number.</p>
@@ -56,6 +54,10 @@
 
 <script>
   // Prevent empty input
+  console.log('yess')
+  console.log(this.rooms)
+
+
   function empty() {
     var room = $("#room").val();
     var firstname = $("#firstname").val();

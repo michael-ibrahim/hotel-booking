@@ -17,11 +17,12 @@ http://www.dakdillonphotography.com/wp-content/uploads/2015/03/20141124dd2736_sf
 */
 
 body { 
-  background: url(http://dodskypict.com/D/San-Francisco-Wallpaper-On-Wallpaper-Hd-7-1920x1080.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  /*background: url(http://dodskypict.com/D/San-Francisco-Wallpaper-On-Wallpaper-Hd-7-1920x1080.jpg) no-repeat center center fixed; */
+  /*-webkit-background-size: cover;*/
+  /*-moz-background-size: cover;*/
+  /*-o-background-size: cover;*/
+  /*background-size: cover;*/
+color: #ddd;
 }
 
 #search-form {
@@ -49,38 +50,38 @@ body {
 /*	color: black;*/
 /*}*/
 
-div{
-	opacity: 0.98;
-}
+/*div{*/
+/*	opacity: 0.98;*/
+/*}*/
 
-p {
-	font-family: 'Lato', sans-serif;
-}
+/*p {*/
+/*	font-family: 'Lato', sans-serif;*/
+/*}*/
 
-h1 {
-	font-family: 'Fjalla One', sans-serif;
-	color: black;
-	font-size: 25px;
-}
+/*h1 {*/
+/*	font-family: 'Fjalla One', sans-serif;*/
+/*	color: black;*/
+/*	font-size: 25px;*/
+/*}*/
 
-h2 {
-	font-family: 'Fjalla One', sans-serif;
-}
+/*h2 {*/
+/*	font-family: 'Fjalla One', sans-serif;*/
+/*}*/
 
-h3 {
-	font-family: 'Fjalla One', sans-serif;
-	color: #045675;
-	font-size: 30px;
-}
+/*h3 {*/
+/*	font-family: 'Fjalla One', sans-serif;*/
+/*	color: #045675;*/
+/*	font-size: 30px;*/
+/*}*/
 
-a {
-	font-family: 'Lato', sans-serif;
-	font-size: 15px;
-}
+/*a {*/
+/*	font-family: 'Lato', sans-serif;*/
+/*	font-size: 15px;*/
+/*}*/
 
-label {
-	font-family: 'Lato', sans-serif;
-}
+/*label {*/
+/*	font-family: 'Lato', sans-serif;*/
+/*}*/
 
 .btn-big {
   padding: 14px 24px;
@@ -217,15 +218,15 @@ div.col-lg-8{
   color: red;
 }
 
-/*Media query for small phone screen*/
-@media (min-width: 576px) and (max-width: 767px) { 
-	.main{
-		margin-left: 10px;
-		margin-right: 10px;
-		padding-top: 10px;
-	}
+/*!*Media query for small phone screen*!*/
+/*@media (min-width: 576px) and (max-width: 767px) { */
+/*	.main{*/
+/*		margin-left: 10px;*/
+/*		margin-right: 10px;*/
+/*		padding-top: 10px;*/
+/*	}*/
 
-	.navbar-inverse .navbar-nav>li{
-		color: black;
-	}
-}
+/*	.navbar-inverse .navbar-nav>li{*/
+/*		color: black;*/
+/*	}*/
+/*}*/

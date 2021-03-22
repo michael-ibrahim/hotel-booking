@@ -5,7 +5,7 @@ const db = require("../../models");
 module.exports = function(passport) {
 
   var Guest = db.Guest;
-  var Admin = db.Manager;
+  var Admin = db.Admin;
 
   passport.serializeUser(function(user, done) {
     return done(null, { id: user.id, isAdmin: user.isAdmin });
@@ -37,7 +37,7 @@ module.exports = function(passport) {
     usernameField : 'email',
     passwordField : 'lastname',
     passReqToCallback : true
-  }, 
+  },
   function(req, email, lastname, done) {
     var data = {
       first_name: req.body.firstname,
@@ -67,7 +67,7 @@ module.exports = function(passport) {
       }
     });
   }));
-    
+
   // Guest signin
   passport.use('local-signin', new LocalStrategy({
     usernameField : 'room',
@@ -143,6 +143,7 @@ module.exports = function(passport) {
     var isValidPassword = function(userpass, password) {
       return bCrypt.compareSync(password, userpass);
     }
+    
     Admin.findOne({
       where: {
         email: email

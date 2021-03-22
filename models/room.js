@@ -1,24 +1,13 @@
-module.exports = function(sequelize, DataTypes) {
-  var Room = sequelize.define("Room", {
-    available: {
-      type: DataTypes.BOOLEAN,
-      allowNull: false,
-      defaultValue: true
-    },
-    checkin: {
-      type: DataTypes.BOOLEAN,
-      allowNull: false,
-      defaultValue: false
-    }
-  });
+module.exports = function(sequelize) {
 
-  Room.associate = function(models) {
-    Room.belongsTo(models.Guest, {
-      foreignKey: {
-        allowNull: false
-      }
-    });
-  }
+    const Room = sequelize.define("Room");
+
+    Room.associate = function(models) {
+        Room.belongsTo(models.Section, {
+            onDelete: "cascade"
+        });
+
+    };
 
   return Room;
 };
